@@ -1,0 +1,111 @@
+.menu-container {
+  padding: 4rem;
+  min-height: 60vh;
+  background: $mainBackGround;
+}
+.menu {
+  &__foods {
+    position: relative;
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+  &__list {
+    background: white;
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 2rem;
+
+    @media (max-width: $first-breakpoint) {
+      margin: 0 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.07);
+    }
+    &:active {
+      transform: translateY(0) scale(1);
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  &__food {
+    width: 100%;
+    position: relative;
+    transition: all 0.4s;
+    margin: 4rem 0;
+    height: 80%;
+  }
+  &__body {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    width: 100%;
+    color: $secondaryColor;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  &__img {
+    width: 100%;
+    transition: all 0.4s;
+    height: 100%;
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  &__paragraph {
+    margin: 1rem 0;
+  }
+
+  &__food:hover &__img {
+    filter: brightness(60%) blur(8px);
+  }
+  &__food:hover &__body {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__burger {
+    display: none;
+  }
+  &__beverages {
+    display: none;
+  }
+  &__pizzas {
+    display: none;
+  }
+}
+.active {
+  background: $primaryColor;
+  color: white;
+  transform: translateY(-8px) scale(1.09);
+  &:hover {
+    transform: translateY(-8px) scale(1.09);
+  }
+}
+.active-item {
+  display: grid;
+}

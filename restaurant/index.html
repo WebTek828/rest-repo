@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label class="checkbox-label" for="checkbox">
+          <div class="hamburger-icon-container">
+            <div class="cancel-hamburger"></div>
+            <div class="hamburger-icon"></div>
+          </div>
+        </label>
+        <ul class="nav__items">
+          <div class="footer__logo-container">
+            <h4 class="footer__heading">Brastakhine</h4>
+            <img
+              src="./img//LogoMakr-6suoXU (1).png"
+              alt=""
+              class="nav__logo"
+            />
+          </div>
+          <div class="nav__search">
+            <input
+              placeholder="Search Foods"
+              type="text"
+              class="search-input"
+            />
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          <div class="nav__lists">
+            <li class="nav__list">HOME</li>
+            <li class="nav__list">About Us</li>
+            <li class="nav__list">Make Reservation</li>
+            <li class="nav__list">Features</li>
+            <li class="nav__list">Menu</li>
+          </div>
+        </ul>
+        <div class="mobile-nav">
+          <li class="nav__list">HOME</li>
+          <li class="nav__list">About Us</li>
+          <li class="nav__list">Make Reservation</li>
+          <li class="nav__list">Features</li>
+          <li class="nav__list">Menu</li>
+        </div>
+      </nav>
+      <div class="home">
+        <h1 class="home__header">Bristakhine</h1>
+        <p class="home__paragraph">We serve the tastiest food.</p>
+        <button class="btn">Make Reservation</button>
+      </div>
+      <div class="famous move-from-right">
+        <h3 class="famous__header">What we are famous for</h3>
+        <div class="cards">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="card-front__img"
+              />
+              <div class="card-front__body">
+                <h4 class="features__header card-front__header">Wine</h4>
+                <p class="card-front__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus sint molestiae pariatur a esse odio iste adipisci
+                  deserunt magni
+                </p>
+              </div>
+            </div>
+            <div class="card-back">
+              <h5 class="card-back__header">Just 12 $</h5>
+              <button class="btn card-back__btn">Order Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="card-front__img"
+              />
+              <div class="card-front__body">
+                <h4 class="features__header card-front__header">
+                  Delicious Hamburger
+                </h4>
+                <p class="card-front__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus sint molestiae pariatur a esse odio iste adipisci
+                  deserunt magni
+                </p>
+              </div>
+            </div>
+            <div class="testing">Testing</div>
+            <div class="card-back">
+              <h5 class="card-back__header">Just 12 $</h5>
+              <button class="btn card-back__btn">Order Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emF8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="card-front__img"
+              />
+              <div class="card-front__body">
+                <h4 class="features__header card-front__header">
+                  Amazing Pizza
+                </h4>
+                <p class="card-front__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus sint molestiae pariatur a esse odio iste adipisci
+                  deserunt magni
+                </p>
+              </div>
+            </div>
+            <div class="card-back">
+              <h5 class="card-back__header">Just 12 $</h5>
+              <button class="btn card-back__btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features section">
+        <h4 class="features__header">Why you should visit us</h4>
+        <div class="features-cards">
+          <div class="features-card">
+            <i class="fas fa-broom features-card__icon"></i>
+            <h4 class="features-card__header">Clean Kitchen</h4>
+            <p class="features-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quam nihil animi fugiat cum facere ex est magnam recusandae
+              accusantium magni vel, ipsa facilis in minus? Temporibus sequi
+              tempore ex.
+            </p>
+          </div>
+          <div class="features-card">
+            <i class="fas fa-wine-glass features-card__icon"></i>
+            <h4 class="features-card__header">Delicious Meals</h4>
+            <p class="features-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quam nihil animi fugiat cum facere ex est magnam recusandae
+              accusantium magni vel, ipsa facilis in minus? Temporibus sequi
+              tempore ex.
+            </p>
+          </div>
+          <div class="features-card">
+            <i class="fas fa-male features-card__icon"></i>
+            <h4 class="features-card__header">Nice Staff</h4>
+            <p class="features-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quam nihil animi fugiat cum facere ex est magnam recusandae
+              accusantium magni vel, ipsa facilis in minus? Temporibus sequi
+              tempore ex.
+            </p>
+          </div>
+          <div class="features-card">
+            <i class="fas fa-coins features-card__icon"></i>
+            <h4 class="features-card__header">Affordable Price</h4>
+            <p class="features-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quam nihil animi fugiat cum facere ex est magnam recusandae
+              accusantium magni vel, ipsa facilis in minus? Temporibus sequi
+              tempore ex.
+            </p>
+          </div>
+          <div class="features-card">
+            <i class="fas fa-map-marker-alt features-card__icon"></i>
+            <h4 class="features-card__header">Great Location</h4>
+            <p class="features-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quam nihil animi fugiat cum facere ex est magnam recusandae
+              accusantium magni vel, ipsa facilis in minus? Temporibus sequi
+              tempore ex.
+            </p>
+          </div>
+          <div class="features-card">
+            <i class="far fa-clock features-card__icon"></i>
+            <h4 class="features-card__header">Fast Food Preparation</h4>
+            <p class="features-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quam nihil animi fugiat cum facere ex est magnam recusandae
+              accusantium magni vel, ipsa facilis in minus? Temporibus sequi
+              tempore ex.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-container section">
+        <h4 class="features__header">Menu</h4>
+        <div class="menu">
+          <div class="menu__category">
+            <h5 class="menu__heading">Categories</h5>
+            <ul class="menu__lists">
+              <li id="beverage" class="menu__list">Beverages</li>
+              <li id="pizza" class="menu__list">Pizza</li>
+              <li id="hamburger" class="menu__list active">Hamburger</li>
+            </ul>
+          </div>
+          <div class="menu__foods">
+            <div id="burger-item" class="menu__burger active-item">
+              <div class="menu__container">
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="beverage-item" class="menu__beverages">
+              <div class="menu__container">
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1556773945-9613f0346c74?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGJldmVyYWdlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1551887558-68148b03eb90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJldmVyYWdlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1594013786645-e2ddb258e371?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJldmVyYWdlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/flagged/photo-1571046423953-30c053888852?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGJldmVyYWdlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/flagged/photo-1571046423953-30c053888852?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGJldmVyYWdlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/flagged/photo-1571046423953-30c053888852?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGJldmVyYWdlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="pizza-item" class="menu__pizzas">
+              <div class="menu__container">
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+                <div class="menu__food">
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="menu__img"
+                  />
+                  <div class="menu__body">
+                    <h5 class="menu__title">Hamburger</h5>
+                    <p class="menu__paragraph">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quasi harum facere quis necessitatibus dolorum iste quas
+                      quae dignissimos doloremque distinctio corporis,
+                      consequatur optio mollitia, autem natus! Nihil delectus
+                      illum eius!
+                    </p>
+                    <button class="btn">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-section section">
+        <div class="about">
+          <div class="about__body">
+            <h4 class="about__header">How we got started</h4>
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium autem, minus repellendus eius ut nostrum amet soluta
+              cum corrupti eligendi ratione maxime similique atque harum, itaque
+              commodi doloribus dolore magni?Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quisquam possimus expedita amet,
+              quidem sapiente, aspernatur deserunt numquam dolor, porro
+              explicabo culpa quam hic minus consequatur totam magni dolore
+              asperiores iure?Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Vel dolores, earum ut reiciendis quidem,
+              corrupti explicabo quisquam aperiam similique nostrum magni.
+              Beatae temporibus eius, consequuntur necessitatibus tenetur quis
+              ab animi!
+            </p>
+          </div>
+        </div>
+        <div class="chefs-container">
+          <h4 class="features__header chefs__header">
+            Our Highest Rated Chefs
+          </h4>
+          <div class="chefs">
+            <div class="chef">
+              <img
+                src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZWZ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="chef__img"
+              />
+              <div class="chef__body">
+                <h4 class="chef__name">Yorkuri Pangrit</h4>
+                <div class="chef__about">
+                  <i class="far fa-star"></i>
+                  <p class="chef__rating">4.4 Rating</p>
+                </div>
+              </div>
+            </div>
+            <div class="chef">
+              <img
+                src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZWZ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="chef__img"
+              />
+              <div class="chef__body">
+                <h4 class="chef__name">Jokura Johnson</h4>
+                <div class="chef__about">
+                  <i class="far fa-star"></i>
+                  <p class="chef__rating">4.8 Rating</p>
+                </div>
+              </div>
+            </div>
+            <div class="chef">
+              <img
+                src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZWZ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="chef__img"
+              />
+              <div class="chef__body">
+                <h4 class="chef__name">Amara Riana</h4>
+                <div class="chef__about">
+                  <i class="far fa-star"></i>
+                  <p class="chef__rating">5 Rating</p>
+                </div>
+              </div>
+            </div>
+            <div class="chef">
+              <img
+                src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZWZ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="chef__img"
+              />
+              <div class="chef__body">
+                <h4 class="chef__name">Potter Pan</h4>
+                <div class="chef__about">
+                  <i class="far fa-star"></i>
+                  <p class="chef__rating">4.5 Rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial Section -->
+
+      <section class="testimonial-section section">
+        <h4 class="testimonial-section__header">
+          What our customers say about us
+        </h4>
+        <div class="slides">
+          <div class="slider">
+            <div class="testimonial slide-1">
+              <img
+                src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBjdXN0b21lcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Customer-Img"
+                class="testimonial__img"
+              />
+              <div class="testimonial__body">
+                <h4 class="testimonial__name">Jonathan Skuma</h4>
+                <p class="testimonial__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis error odit debitis fugit placeat ipsum reprehenderit
+                  in velit molestiae perferendis quae facilis aliquid, numquam,
+                  qui explicabo porro nesciunt dicta? Saepe. Lorem ipsum dolor
+                </p>
+              </div>
+            </div>
+            <div class="testimonial slide-2">
+              <img
+                src="https://images.unsplash.com/photo-1609902726285-00668009f004?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njd8fGhhcHB5JTIwY3VzdG9tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Customer-Img"
+                class="testimonial__img"
+              />
+              <div class="testimonial__body">
+                <h4 class="testimonial__name">Jonathan Skuma</h4>
+                <p class="testimonial__paragraph">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now
+                </p>
+              </div>
+            </div>
+            <div class="testimonial slide-3">
+              <img
+                src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzR8fGhhcHB5JTIwY3VzdG9tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Customer-Img"
+                class="testimonial__img"
+              />
+              <div class="testimonial__body">
+                <h4 class="testimonial__name">Jonathan Skuma</h4>
+                <p class="testimonial__paragraph">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. All the Lorem Ipsum
+                </p>
+              </div>
+            </div>
+            <div class="testimonial slide-4">
+              <img
+                src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzR8fGhhcHB5JTIwY3VzdG9tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Customer-Img"
+                class="testimonial__img"
+              />
+              <div class="testimonial__body">
+                <h4 class="testimonial__name">Jonathan Skuma</h4>
+                <p class="testimonial__paragraph">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. All the Lorem Ipsum
+                </p>
+              </div>
+            </div>
+            <div class="testimonial slide-5">
+              <img
+                src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzR8fGhhcHB5JTIwY3VzdG9tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Customer-Img"
+                class="testimonial__img"
+              />
+              <div class="testimonial__body">
+                <h4 class="testimonial__name">Jonathan Skuma</h4>
+                <p class="testimonial__paragraph">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. All the Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <i id="left" class="arrows move-left fas fa-chevron-left"></i>
+          <i id="right" class="arrows move-right fas fa-chevron-right"></i>
+        </div>
+      </section>
+
+      <!-- Form Section -->
+
+      <div class="form-container section">
+        <h4 class="features__header">Make Reservation</h4>
+        <form action="" class="form">
+          <div class="form__input-container">
+            <input class="form__input" type="text" placeholder="Email" />
+            <label class="form__label">Email</label>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input" type="text" placeholder="Name" />
+            <label class="form__label">Name</label>
+          </div>
+          <div class="form__radios">
+            <div class="form__radio-container">
+              <input id="single" name="type" class="form__radio" type="radio" />
+              <label class="form__radio-label" for="single">
+                <span>Single</span>
+                <span class="form__radio-fake"></span>
+              </label>
+            </div>
+            <div class="form__radio-container">
+              <input
+                checked
+                id="group"
+                name="type"
+                class="form__radio"
+                type="radio"
+              />
+              <label class="form__radio-label" for="group">
+                <span>Group</span>
+                <span class="form__radio-fake"></span>
+              </label>
+            </div>
+          </div>
+          <button class="btn form__btn">Submit</button>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="footer__body">
+          <div class="footer__logo-container">
+            <h4 class="footer__heading">Brastakhine</h4>
+            <img src="./img//LogoMakr-6suoXU (1).png" alt="" class="logo" />
+          </div>
+          <ul class="footer__lists">
+            <li class="footer__list">Home</li>
+            <li class="footer__list">Privacy Policy</li>
+            <li class="footer__list">Make Reservation</li>
+            <li class="footer__list">Gallery</li>
+            <li class="footer__list">About us</li>
+            <li class="footer__list">Work With Us</li>
+          </ul>
+        </div>
+        <div class="footer__right">All rights reserved @</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

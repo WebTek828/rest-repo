@@ -1,0 +1,92 @@
+@import "./base";
+@import "./famous";
+@import "./features";
+@import "./menu";
+@import "./about";
+@import "./form";
+@import "./footer";
+@import "./testimonials";
+@import "./navigation";
+.wrapper {
+  overflow: hidden;
+}
+.home {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/res-img-3.jpg");
+  transition: all 5s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  color: white;
+  animation: backgroundImgs 20s infinite ease-in-out;
+  @include flexCenter(column, 90vh);
+  &__header {
+    font-family: "Dancing Script", cursive;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1rem;
+  }
+  &__paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 3px solid $primaryColor;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    $primaryColor 50%
+  );
+  background-size: 220%;
+  &:hover {
+    color: $secondaryColor;
+    background-position: 100%;
+  }
+}
+.logo {
+  width: 6rem;
+  height: 8rem;
+}
+
+@keyframes backgroundImgs {
+  0% {
+    background-image: url("../img//restaurant.jpg");
+  }
+  20% {
+    background-image: url("../img/res-img-3.jpg");
+  }
+  40% {
+    background-image: url("../img/res-img-4.jpg");
+  }
+  60% {
+    background-image: url("../img/res-img-5.jpg");
+  }
+  80% {
+    background-image: url("../img/res-img-6.jpg");
+  }
+  100% {
+    background-image: url("../img//restaurant.jpg");
+  }
+}
+
+.section-hide {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.section {
+  transition: all 0.4s;
+}

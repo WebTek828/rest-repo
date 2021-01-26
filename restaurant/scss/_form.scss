@@ -1,0 +1,110 @@
+.form-container {
+  padding: 4rem;
+  min-height: 50vh;
+  background: $mainBackGround;
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+  background: $secondaryColor;
+  text-align: center;
+  padding: 2rem;
+
+  @media (max-width: $first-breakpoint) {
+    width: 100%;
+  }
+
+  &__input {
+    display: bock;
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    &::placeholder {
+      transition: all 0.4s;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  &__input-container {
+    position: relative;
+  }
+  &__label {
+    position: absolute;
+    top: -10px;
+    left: 5rem;
+    color: rgba(0, 0, 0, 0.473);
+    transform: translateY(2.5rem);
+    transition: all 0.4s;
+    font-size: 0.9rem;
+    opacity: 0;
+
+    @media (max-width: $biggest-breakpoint) {
+      left: 4rem;
+    }
+    @media (max-width: $big-breakpoint) {
+      left: 3.5rem;
+    }
+
+    @media (max-width: $first-breakpoint) {
+      left: 6rem;
+    }
+  }
+  &__input:focus + &__label {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &__input:focus::placeholder {
+    opacity: 0;
+  }
+  &__radio {
+    display: none;
+  }
+  &__radio-fake {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid $primaryColor;
+    display: inline-block;
+  }
+  &__radios {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__radio-label {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+    cursor: pointer;
+  }
+  &__radio-fake {
+    margin-left: 1rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 50%;
+      background: $primaryColor;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: inline-block;
+      display: none;
+    }
+  }
+  &__radio:checked + &__radio-label &__radio-fake::after {
+    display: inline-block;
+    background-position: 100%;
+  }
+}

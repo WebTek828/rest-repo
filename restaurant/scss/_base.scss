@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primaryColor: #242582;
+$primaryDark: #24268286;
+$secondaryColor: #fc4445;
+$tertiaryColor: #2e1114;
+$tertiaryColorDark: #2e11143d;
+$mainBackGround: rgba(128, 128, 128, 0.473);
+
+$biggest-breakpoint: 1300px;
+$big-breakpoint: 1100px;
+$small-breakpoint: 800px;
+
+$first-breakpoint: 1024px;
+$second-breakpoint: 900px;
+$third-breakpoint: 700px;
+
+@mixin flexCenter($direction, $height) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  height: $height;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.3;
+}

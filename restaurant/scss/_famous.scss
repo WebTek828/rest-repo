@@ -1,0 +1,90 @@
+.famous {
+  min-height: 60vh;
+  background: $mainBackGround;
+  padding: 4rem;
+  transition: all 0.8s ease-in-out;
+
+  &__header {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondaryColor;
+    transform: skew(13deg, 1deg);
+    text-shadow: 0 3px 3px black;
+  }
+}
+.cards {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  transition: all 0.8s;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin: 2rem 0;
+  perspective: 1500rem;
+  position: relative;
+  &:hover &-front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &-back {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.card-front {
+  transition: all 0.8s;
+  background: white;
+  width: 20rem;
+  height: 37rem;
+  box-shadow: 0 8px 8px grey;
+  position: relative;
+  z-index: 10;
+  backface-visibility: hidden;
+
+  &__img {
+    width: 100%;
+    height: 15rem;
+  }
+  &__body {
+    padding: 2rem;
+  }
+  &__header {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  &__paragraph {
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.card-back {
+  transition: all 0.8s;
+  width: 20rem;
+  background: $secondaryColor;
+  @include flexCenter(column, 34.7rem);
+  box-shadow: 0 8px 8px grey;
+  position: absolute;
+  top: 0%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  height: 37.4rem;
+
+  &__header {
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+}
+.move-from-right {
+  transform: scale(0);
+}
